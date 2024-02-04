@@ -14,7 +14,7 @@ test('tags.list()', {skip: true}, async () => {
     console.log(list.data.tags[0]);
 });
 
-test('tags.retrieve()', {skip: false}, async () => {
+test('tags.retrieve()', {skip: true}, async () => {
     const idOrSlug = process.env.TAG_ID;
 
     const tag = await kv.tags.retrieve(idOrSlug);

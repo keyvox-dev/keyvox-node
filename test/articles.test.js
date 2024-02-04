@@ -18,7 +18,7 @@ test('articles.list()', {skip: true}, async () => {
     console.log(list)
 });
 
-test('articles.retrieve()', {skip: false}, async () => {
+test('articles.retrieve()', {skip: true}, async () => {
     const idOrSlug = process.env.ARTICLE_ID;
     const article = await kv.articles.retrieve(idOrSlug, {
         tags: 1,
