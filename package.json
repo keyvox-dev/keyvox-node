@@ -1,0 +1,27 @@
+{
+  "name": "keyvox-node",
+  "version": "1.0.1",
+  "description": "Official SDK for Node.js projects",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint src"
+  },
+  "keywords": [
+    "blog",
+    "api",
+    "keyvox"
+  ],
+  "author": "keyvox.dev",
+  "license": "MIT",
+  "type": "module",
+  "types": "src/index.d.ts",
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0"
+  },
+  "volta": {
+    "node": "21.5.0"
+  }
+}
