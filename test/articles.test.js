@@ -1,8 +1,8 @@
 import {test } from 'node:test';
-import assert from 'node:assert'
-import KeyVox from '../src/KeyVox.js'
-import 'dotenv/config'
-import process from 'node:process'
+import assert from 'node:assert';
+import 'dotenv/config';
+import process from 'node:process';
+import KeyVox from '../src/KeyVox.js';
 
 const kv = new KeyVox(process.env.KEY, {
     baseURL: process.env.BASE_URL

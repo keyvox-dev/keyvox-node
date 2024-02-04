@@ -1,4 +1,5 @@
 import Article from './Article.js';
+import Tag from './Tag.js';
 
 class KeyVox {
 
@@ -6,6 +7,7 @@ class KeyVox {
         this.apiKey = apiKey;
         this.baseURL = options?.baseURL ?? 'https://keyvox.dev/api';
         this.articles = new Article(this.apiKey, this.baseURL, this.#fetchData.bind(this));
+        this.tags = new Tag(this.apiKey, this.baseURL, this.#fetchData.bind(this));
     }
 
     async #fetchData(url, options) {

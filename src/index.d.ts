@@ -18,6 +18,10 @@ declare module 'keyvox-node' {
                 author?: boolean
             }): Promise<Object>;
         }
+
+        tags: {
+            list(): Promise<Object>;
+        }
     }
 
     export default KeyVox;
